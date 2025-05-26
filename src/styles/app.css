@@ -1,0 +1,31 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  /* overflow: hidden; */
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: rgb(32, 32, 32);
+  color: azure;
+}
+
+.main {
+  background-color: rgb(46, 46, 46);
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.226);
+  height: 30rem;
+  width: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
