@@ -1,6 +1,8 @@
 import { useState } from "react";
+import QRCode from "react-qr-code";
+import '../styles/QR.css'
 
-export const QR = () => {
+export const QR : React.FC= () => {
   const [urlName, setUrlName] = useState("");
 
   const handlerQRGenerator = (event: React.MouseEvent) => {
@@ -9,11 +11,7 @@ export const QR = () => {
     const inputElement = document.getElementById("input") as HTMLInputElement;
     const value: string = inputElement.value;
 
-    if (!value.includes("https://") || !value.includes("http://")) {
-      setUrlName("Tiene que ser una url el valor ingresado");
-    } else {
-      setUrlName(value);
-    }
+    setUrlName(value)
   };
 
   return (
@@ -23,7 +21,9 @@ export const QR = () => {
         <button onClick={handlerQRGenerator}>Push Me</button>
       </form>
 
-      <p>{urlName}</p>
+      <div>
+        <QRCode value={urlName} size={256}></QRCode>
+      </div>
     </section>
   );
 };

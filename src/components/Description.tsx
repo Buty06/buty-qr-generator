@@ -6,7 +6,7 @@ export const Description = () => {
       <h1 className="main_title">Buty QR Generator</h1>
 
       <p className="main_description_text">
-        Ingrese una url para generar tu código qr
+        Ingrese una url o un texto para generar un QR con ese contenido en su interior
       </p>
     </header>
   );
