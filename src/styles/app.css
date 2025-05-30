@@ -22,7 +22,7 @@ body {
   padding: 1rem;
   border-radius: 15px;
   box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.226);
-  height: 30rem;
+  min-height: 35rem;
   width: 20rem;
   display: flex;
   align-items: center;

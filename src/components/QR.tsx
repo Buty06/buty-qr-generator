@@ -16,12 +16,12 @@ export const QR : React.FC= () => {
 
   return (
     <section>
-      <form>
-        <input type="text" id="input" />
-        <button onClick={handlerQRGenerator}>Push Me</button>
+      <form className="main_form">
+        <input type="text" id="input" className="main_input"/>
+        <button onClick={handlerQRGenerator} className="main_button">Generar</button>
       </form>
 
-      <div>
+      <div  className="main_QR">
         <QRCode value={urlName} size={256}></QRCode>
       </div>
     </section>
