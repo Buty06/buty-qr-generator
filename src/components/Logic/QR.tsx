@@ -1,5 +1,6 @@
 import { useState, useRef } from "react";
 import QRCode from "react-qr-code";
+import { toPng } from "html-to-image";
 import "../../styles/QR.css";
 
 export const QR: React.FC = () => {
@@ -23,11 +24,15 @@ export const QR: React.FC = () => {
     setFgColor(valueFgColor);
   };
 
-  const dowloadQrCode = (e: React.MouseEvent) => {
-    e.preventDefault();
-
+  const dowloadImage = () => {
     if (!qrRef.current) return;
-    console.log(qrRef);
+
+    toPng(qrRef.current).then((dataUrl) => {
+      const link = document.createElement("a");
+      link.download = "qr-code.png";
+      link.href = dataUrl;
+      link.click();
+    });
   };
 
   return (
@@ -71,7 +76,9 @@ export const QR: React.FC = () => {
         ></QRCode>
       </div>
 
-      <button onClick={dowloadQrCode}>ama</button>
+      <button onClick={dowloadImage}>
+        <img src="../../../public/iconsdownload.png" alt="Download" />
+      </button>
     </section>
   );
 };
