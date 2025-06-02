@@ -15,7 +15,7 @@
 .main_button {
   margin-top: 0.2rem;
   height: 2rem;
-  width: 7rem;
+  width: 5rem;
   border-radius: 5px;
   padding: 0.2rem 0.5rem;
   font-size: 1.1rem;
@@ -23,7 +23,6 @@
   background-color: rgb(32, 32, 32);
   color: azure;
   transition: 0.2s ease-in;
-  align-self: flex-end;
 
   &:hover {
     background-color: rgb(18, 18, 18);
@@ -33,4 +32,10 @@
 .main_QR {
   align-self: center;
   justify-self: center;
+}
+
+.main_button_input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
