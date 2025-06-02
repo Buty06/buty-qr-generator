@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
-import { App } from "./components/App";
+import { App } from "./App";
 
 //Esta es una manera, pero si estoy seguro que el elemento existe, puedo usar un non-null assertion con el signo (!)
 // const rootElement = document.getElementById('root');

@@ -1,6 +1,6 @@
-import "../styles/app.css";
-import { Description } from "./Description";
-import { QR } from "./QR";
+import "./styles/app.css";
+import { Description } from "./components/UI/Description";
+import { QR } from "./components/Logic/QR";
 
 export const App = () => {
   return (

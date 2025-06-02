@@ -1,12 +1,13 @@
 .main_form {
   margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .main_input {
   border-radius: 5px;
   padding: 0.5rem;
   width: 100%;
-  align-items: flex-start;
   font-size: 1.2rem;
   font-weight: 800;
 }
@@ -22,6 +23,7 @@
   background-color: rgb(32, 32, 32);
   color: azure;
   transition: 0.2s ease-in;
+  align-self: flex-end;
 
   &:hover {
     background-color: rgb(18, 18, 18);
