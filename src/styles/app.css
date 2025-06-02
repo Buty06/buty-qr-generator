@@ -14,7 +14,7 @@ body {
   display: grid;
   place-items: center;
   background: linear-gradient(to bottom, #181818, #641659);
-  color: azure;
+  color: rgb(240, 245, 245);
 }
 
 .main {
