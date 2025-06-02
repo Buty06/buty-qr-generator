@@ -13,15 +13,15 @@ body {
   min-height: 100vh;
   display: grid;
   place-items: center;
-  background-color: rgb(32, 32, 32);
+  background: linear-gradient(to bottom, #181818, #1f0c1c);
   color: azure;
 }
 
 .main {
-  background-color: rgb(46, 46, 46);
+  background-color: rgba(46, 46, 46, 0.336);
   padding: 1rem;
   border-radius: 15px;
-  box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.226);
+  box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.452);
   min-height: 35rem;
   width: 20rem;
   display: flex;

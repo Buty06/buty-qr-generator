@@ -29,7 +29,7 @@ export const QR: React.FC = () => {
   return (
     <section>
       <form className="main_form">
-        <input type="text" id="input" className="main_input" />
+        <input type="text" id="input" className="main_input" required />
 
         <section className="main_button_input">
           <input type="color" id="bgColor" className="main_button" />
