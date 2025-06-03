@@ -42,8 +42,11 @@
 }
 
 .main_btn_image {
-  width: 2rem;
-  height: 2rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  padding: 0.2rem;
+  border-radius: 5px;
+  align-self: flex-end;
 }
 
 .img {
