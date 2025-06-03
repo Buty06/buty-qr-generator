@@ -32,10 +32,21 @@
 .main_QR {
   align-self: center;
   justify-self: center;
+  padding: 1rem;
 }
 
 .main_button_input {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.main_btn_image {
+  width: 2rem;
+  height: 2rem;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
 }

@@ -2,6 +2,7 @@ import { useState, useRef } from "react";
 import QRCode from "react-qr-code";
 import { toPng } from "html-to-image";
 import "../../styles/QR.css";
+import dowImg from "../../assets/iconsdownload.png";
 
 export const QR: React.FC = () => {
   const [urlName, setUrlName] = useState("");
@@ -76,8 +77,8 @@ export const QR: React.FC = () => {
         ></QRCode>
       </div>
 
-      <button onClick={dowloadImage}>
-        <img src="../../../public/iconsdownload.png" alt="Download" />
+      <button onClick={dowloadImage} className="main_btn_image">
+        <img src={dowImg} alt="Download" className="img" />
       </button>
     </section>
   );
